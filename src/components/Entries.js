@@ -50,9 +50,6 @@ class Entries extends React.Component {
         this.setState(() => ({selected: []}));
         this.setRows();
       }
-      if (prevState.selected !== this.state.selected) {
-        console.log(this.state.selected);
-      }
     }
 
     selectionChange = (newSelection) => {
