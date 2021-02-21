@@ -18,10 +18,13 @@ class HomePage extends React.Component {
     }
 
     setEntries = () => {
-        const firstIndex = this.props.page*this.props.perPage;
+        // const firstIndex = this.props.page*this.props.perPage;
+        // this.setState(() => ({
+        //     entries: this.props.entries.slice(firstIndex, firstIndex+this.props.perPage)
+        // }))
         this.setState(() => ({
-            entries: this.props.entries.slice(firstIndex, firstIndex+this.props.perPage)
-        }))
+            entries: [...this.props.entries]
+        }));
     }
 
     componentDidUpdate(prevProps) {

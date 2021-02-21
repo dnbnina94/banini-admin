@@ -72,6 +72,7 @@ class Entries extends React.Component {
     }
 
     render() {
+        console.log(this.props.entries.length);
         return (
             <div>
                 <div className="text-center mt-4">
