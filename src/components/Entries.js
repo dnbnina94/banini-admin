@@ -18,7 +18,8 @@ class Entries extends React.Component {
           {field: 'col3', headerName: 'Email', width: 300},
           {field: 'col4', headerName: 'Telefon', width: 150},
           {field: 'col5', headerName: 'Br. fiskalnog isečka', width: 200},
-          {field: 'col6', headerName: 'Vreme', width: 150}
+          {field: 'col6', headerName: 'Ip adresa', width: 200},
+          {field: 'col7', headerName: 'Vreme', width: 150}
         ],
         rows: [],
         selected: [],
@@ -39,7 +40,8 @@ class Entries extends React.Component {
             col3: e.email,
             col4: e.telefon,
             col5: e.brisecka,
-            col6: formatMillisecs(e.vreme)
+            col6: e.ipaddress,
+            col7: formatMillisecs(e.vreme)
           }
         })
       }));
